@@ -1,0 +1,5 @@
+<div *ngIf="toasts.length > 0" class="toast-container">
+  <alert  class="box-shadow" [dismissOnTimeout]="toasts.timeout" dismissible="true" [type]="toasts.type" *ngFor="let toasts of toasts">
+    {{toasts.message}}
+  </alert>
+</div>
